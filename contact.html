@@ -8,12 +8,28 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Helvetica:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Navigation -->
+  <div class="nav-container">
+    <div class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="store.html">Store</a>
+      <a href="contact.html">Contact</a>
+      <a href="links.html">Links</a>
+    </div>
+    <div class="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
 
   <div class="social-bar">
-    <a href="#" target="_blank">IG</a>
-    <a href="#" target="_blank">FB</a>
-    <a href="#" target="_blank">PN</a>
-    <a href="#" target="_blank">IN</a>
+    <a href="https://instagram.com" target="_blank" class="instagram" title="Instagram">IG</a>
+    <a href="https://linkedin.com" target="_blank" class="linkedin" title="LinkedIn">IN</a>
+    <a href="https://pinterest.com" target="_blank" class="pinterest" title="Pinterest">PN</a>
+    <a href="https://behance.net" target="_blank" class="behance" title="Behance">BE</a>
   </div>
 
   <div class="services-bar">
@@ -33,13 +49,28 @@
       </div>
       <div class="bottom-content">
         <div class="we-love" style="max-width:500px;margin:auto;">
-          Reach out to discuss collaborations,<br>
-          inquiries, or to learn more about our services.
+          <p>Reach out to discuss collaborations, inquiries, or to learn more about our services.</p>
+          
+          <!-- Contact Form using Formspree -->
+          <form class="contact-form" action="https://formspree.io/f/your-formspree-endpoint" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="subject" placeholder="Subject">
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">SEND MESSAGE</button>
+          </form>
+          
+          <p style="margin-top: 30px;">
+            Alternatively, you can reach us at:<br>
+            <strong>Email:</strong> hello@mybrandstudio.com<br>
+            <strong>Phone:</strong> +1 (555) 123-4567
+          </p>
         </div>
       </div>
     </div>
   </div>
   
-<script src="assets/js/background-shuffle.js"></script>
+  <script src="assets/js/background-shuffle.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

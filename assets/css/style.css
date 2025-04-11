@@ -22,6 +22,7 @@ body {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  padding-top: 60px; /* Make room for navigation */
 }
 
 .hero-background {
@@ -177,3 +178,6 @@ body {
     right: 0;
   }
 }
+
+/* Import additional styles */
+@import url('additional-styles.css');
