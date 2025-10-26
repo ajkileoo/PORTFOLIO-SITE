@@ -1,20 +1,21 @@
 {
   "name": "portfolio-site",
   "version": "1.0.0",
+  "description": "Dynamic personal portfolio website built with Bootstrap for CSCE 3420 assignment.",
   "main": "index.js",
   "scripts": {
+    "start": "echo \"No build step required for static site\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ajkileoo/PORTFOLIO-SITE.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["portfolio", "bootstrap", "dynamic", "CSCE3420"],
+  "author": "ajkileoo",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ajkileoo/PORTFOLIO-SITE/issues"
   },
-  "homepage": "https://github.com/ajkileoo/PORTFOLIO-SITE#readme",
-  "description": ""
+  "homepage": "https://github.com/ajkileoo/PORTFOLIO-SITE#readme"
 }
