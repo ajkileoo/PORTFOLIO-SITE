@@ -1,102 +1,77 @@
 <!DOCTYPE html>
+<!-- Updated October 26, 2025 -->
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio - My Brand Studio</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Helvetica:wght@300;400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - My Work</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <!-- Navigation -->
-  <div class="nav-container">
-    <div class="main-nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="store.html">Store</a>
-      <a href="contact.html">Contact</a>
-      <a href="links.html">Links</a>
-    </div>
-    <div class="hamburger">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-  </div>
-
-  <div class="social-bar">
-    <a href="https://instagram.com" target="_blank" class="instagram" title="Instagram">IG</a>
-    <a href="https://linkedin.com" target="_blank" class="linkedin" title="LinkedIn">IN</a>
-    <a href="https://pinterest.com" target="_blank" class="pinterest" title="Pinterest">PN</a>
-    <a href="https://behance.net" target="_blank" class="behance" title="Behance">BE</a>
-  </div>
-
-  <div class="services-bar">
-    <div class="service-item">ART DIRECTION<br>BRAND DESIGN</div>
-    <div class="service-item">DIGITAL ART<br>VISUAL DESIGN</div>
-    <div class="service-item">WEBSITE<br>DEVELOPMENT</div>
-    <div class="service-item">SET DESIGN<br>INTERIOR CONSULTING</div>
-    <div class="service-item">BLOG<br>INSPIRATION</div>
-  </div>
-
-  <div class="hero">
-    <div class="hero-background"></div>
-    <div class="hero-content">
-      <h1 class="brand-title">PORTFOLIO</h1>
-      <div class="tagline">
-        DISCOVER OUR CREATIVE WORKS
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">My Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="store.html">Store</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="links.html">Links</a></li>
+        </ul>
       </div>
-      <div class="bottom-content">
-        <div class="portfolio-grid">
-          <div class="portfolio-item">
-            <img src="assets/Images/IMG_1949.JPG" alt="Art Piece">
-            <div class="portfolio-item-overlay">
-              <h3>Abstract Composition</h3>
-              <p>Digital Art, 2023</p>
+    </div>
+  </nav>
+
+  <!-- Portfolio Section -->
+  <section class="py-5">
+    <div class="container">
+      <h1 class="mb-4">My Portfolio</h1>
+      <p>Here are some highlights of my work, including design projects, photography, and other creative endeavors.</p>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1543832923-6cba2e7246d5?auto=format&fit=crop&w=800&q=60" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Project One</h5>
+              <p class="card-text">A brief description of this project. Replace this with details of your own work.</p>
             </div>
           </div>
-          <div class="portfolio-item">
-            <img src="assets/media/bg1.jpg" alt="Brand Design">
-            <div class="portfolio-item-overlay">
-              <h3>Gradient Study</h3>
-              <p>Brand Design, 2023</p>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1493119508027-2b584f234d6c?auto=format&fit=crop&w=800&q=60" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">Project Two</h5>
+              <p class="card-text">A brief description of this project. Replace this with details of your own work.</p>
             </div>
           </div>
-          <div class="portfolio-item">
-            <img src="assets/media/bg3.jpg" alt="Visual Design">
-            <div class="portfolio-item-overlay">
-              <h3>Color Exploration</h3>
-              <p>Visual Design, 2023</p>
-            </div>
-          </div>
-          <div class="portfolio-item">
-            <img src="assets/media/bg1.jpg" alt="Interior Design">
-            <div class="portfolio-item-overlay">
-              <h3>Space Concept</h3>
-              <p>Interior Design, 2023</p>
-            </div>
-          </div>
-          <div class="portfolio-item">
-            <img src="assets/media/bg3.jpg" alt="Art Direction">
-            <div class="portfolio-item-overlay">
-              <h3>Visual Identity</h3>
-              <p>Art Direction, 2023</p>
-            </div>
-          </div>
-          <div class="portfolio-item">
-            <img src="assets/Images/IMG_1949.JPG" alt="Photography">
-            <div class="portfolio-item-overlay">
-              <h3>Light Study</h3>
-              <p>Photography, 2023</p>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=60" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">Project Three</h5>
+              <p class="card-text">A brief description of this project. Replace this with details of your own work.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  
-  <script src="assets/js/background-shuffle.js"></script>
-  <script src="assets/js/main.js"></script>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    &copy; 2025 My Portfolio. All rights reserved.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>
