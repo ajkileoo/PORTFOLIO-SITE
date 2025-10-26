@@ -1,125 +1,81 @@
 <!DOCTYPE html>
+<!-- Updated October 26, 2025 -->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="./css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Tech Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">My Portfolio</a>
+      <a class="navbar-brand" href="index.html">My Portfolio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link" href="#videos">Videos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="store.html">Store</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="links.html">Links</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section with slideshow -->
-  <header id="hero" class="vh-100 d-flex align-items-center justify-content-center">
-    <div class="hero-overlay"></div>
-    <div class="hero-content text-center text-white">
-      <h1 class="display-4 fw-bold">Welcome to My World</h1>
-      <p class="lead">Showcasing my journey, art and creativity</p>
-      <a href="#about" class="btn btn-primary">Discover More</a>
+  <!-- Hero Section -->
+  <section class="hero d-flex align-items-center justify-content-center">
+    <div class="text-center">
+      <h1 class="display-4 text-white mb-4">Hi, I'm AJ Kileo</h1>
+      <p class="lead text-white mb-5">Tech‑savvy CSCE 3420 student building interactive web experiences with HTML, CSS, JavaScript, Node.js & AWS.</p>
+      <a href="portfolio.html" class="btn btn-primary">Explore My Work</a>
     </div>
-  </header>
+  </section>
 
   <!-- About Section -->
-  <section id="about" class="py-5">
+  <section class="py-5" id="about">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <h2>About Me</h2>
-          <p>
-            Hi there! I'm <strong>Your Name</strong>, a creative individual with a passion for web development,
-            art, and video creation. This website serves as a hub for everything I'm working on – from
-            stunning visuals and music to interactive applications. You'll find a collection of my latest
-            projects and some glimpses of what inspires me.
-          </p>
-          <p>
-            My goal is to build a dynamic, stylish web experience that reflects my personality and skills.
-            Feel free to explore and come back often to see new work. If you like what you see or want
-            something similar, reach out via the contact section below!
-          </p>
-        </div>
-        <div class="col-md-6">
-          <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded" alt="Profile">
-        </div>
-      </div>
+      <h2 class="mb-4">About Me</h2>
+      <p>I'm a student at the University of North Texas taking CSCE 3420 – Internet Programming. My passions range from full‑stack web development and cloud computing to digital art and videography. I enjoy crafting responsive websites, experimenting with Bootstrap layouts, and deploying serverless apps on AWS. This portfolio is a playground to showcase my projects, art, and technical skills.</p>
     </div>
   </section>
 
-  <!-- Gallery Section -->
-  <section id="gallery" class="py-5 bg-light">
+  <!-- Projects Section -->
+  <section class="py-5 bg-light" id="projects">
     <div class="container">
-      <h2 class="text-center mb-4">Art &amp; Photography</h2>
-      <div class="row g-4">
-        <!-- Example images -->
-        <div class="col-sm-6 col-lg-4">
-          <div class="card shadow-sm">
-            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Art piece 1">
+      <h2 class="mb-4">Featured Projects</h2>
+      <div class="row">
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Project 1">
             <div class="card-body">
-              <h5 class="card-title">Abstract Vibes</h5>
-              <p class="card-text">A colorful journey through abstract forms and textures.</p>
+              <h5 class="card-title">Responsive Portfolio</h5>
+              <p class="card-text">A mobile‑first website built with HTML5, CSS3, and Bootstrap 5 to showcase a personal brand.</p>
             </div>
           </div>
         </div>
-        <div class="col-sm-6 col-lg-4">
-          <div class="card shadow-sm">
-            <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Art piece 2">
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1556155092-8707de31f9c4?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Project 2">
             <div class="card-body">
-              <h5 class="card-title">Nature's Whisper</h5>
-              <p class="card-text">Capturing the serenity and beauty of the natural world.</p>
+              <h5 class="card-title">Node.js REST API</h5>
+              <p class="card-text">A RESTful API built with Express.js and MongoDB for a simple blog application.</p>
             </div>
           </div>
         </div>
-        <div class="col-sm-6 col-lg-4">
-          <div class="card shadow-sm">
-            <img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Art piece 3">
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1531497865147-0423c22c38cf?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Project 3">
             <div class="card-body">
-              <h5 class="card-title">Urban Life</h5>
-              <p class="card-text">Street scenes and architecture full of energy and rhythm.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4">
-          <div class="card shadow-sm">
-            <img src="https://images.unsplash.com/photo-1499084732479-de2c02d45fc4?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Art piece 4">
-            <div class="card-body">
-              <h5 class="card-title">Coastal Dreams</h5>
-              <p class="card-text">The mood and emotion of the coast captured in a frame.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4">
-          <div class="card shadow-sm">
-            <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Art piece 5">
-            <div class="card-body">
-              <h5 class="card-title">Night Lights</h5>
-              <p class="card-text">Exploring cities at night with vibrant lights and shadows.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4">
-          <div class="card shadow-sm">
-            <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Art piece 6">
-            <div class="card-body">
-              <h5 class="card-title">Portrait Study</h5>
-              <p class="card-text">A study in portrait photography and human expression.</p>
+              <h5 class="card-title">Serverless Image Gallery</h5>
+              <p class="card-text">An AWS‑powered image gallery leveraging S3, Lambda, and API Gateway for a highly scalable backend.</p>
             </div>
           </div>
         </div>
@@ -127,63 +83,20 @@
     </div>
   </section>
 
-  <!-- Videos Section -->
-  <section id="videos" class="py-5">
+  <!-- Contact CTA -->
+  <section class="py-5 text-center">
     <div class="container">
-      <h2 class="text-center mb-4">Video Showcase</h2>
-      <div class="row justify-content-center">
-        <div class="col-md-8">
-          <div class="ratio ratio-16x9 mb-4">
-            <!-- Placeholder video; replace src with your own high-quality video links -->
-            <video controls class="w-100 rounded" poster="https://images.unsplash.com/photo-1525097487452-6278ff080c31?auto=format&fit=crop&w=800&q=80">
-              <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-      </div>
-      <p class="text-muted text-center">More videos coming soon...</p>
+      <h2 class="mb-4">Get In Touch</h2>
+      <p>Interested in collaborating or just want to say hi? Reach out through my contact page.</p>
+      <a href="contact.html" class="btn btn-outline-primary">Contact Me</a>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-5 bg-dark text-light">
-    <div class="container">
-      <h2 class="text-center mb-4">Contact Me</h2>
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <form id="contactForm">
-            <div class="mb-3">
-              <label for="name" class="form-label">Your Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email Address</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="4" placeholder="Your message" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
-          </form>
-          <div class="alert alert-success mt-3 d-none" id="successAlert">
-            Your message has been sent! I'll get back to you soon.
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="py-3 bg-dark text-center text-light">
-    <div class="container">
-      <small>&copy; 2025 Your Name. All rights reserved.</small>
-    </div>
+  <footer class="bg-dark text-white text-center py-3">
+    &copy; 2025 AJ Kileo. All rights reserved.
   </footer>
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>
